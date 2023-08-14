@@ -1,9 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * main - A program that assigns a random number to the variable n each time it is executed
+ * main - Entry point.
  *
  * Return: 0 success
  */
@@ -11,7 +10,6 @@ int main(void)
 {
 int n;
 int lastnum;
-	
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 lastnum = n % 10;
