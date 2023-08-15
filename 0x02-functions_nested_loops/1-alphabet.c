@@ -2,14 +2,14 @@
 /**
  * main - A function that prints the alphabets in lowercase.
  *
- * Return: 0 (success)
+ * Return: void
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 char c;
 for (c = 'a'; c <= 'z'; c++)
 {
-putchar(c);
+_putchar(c);
 }
-putchar('\n');
+_putchar('\n');
 }
