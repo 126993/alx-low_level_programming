@@ -2,21 +2,18 @@
 
 /**
  * _strcmp - Compares two srings.
- * @s1: String value.
- * @s2: String value.
- * Return: s1[a] - s2[a]
+ * @s1: String value 1
+ * @s2: String value 2
+ * Return: (0) when same
  */
 int _strcmp(char *s1, char *s2)
 {
 	int a;
+	int b = 0;
 
-	while (s1[a] != '\0' && s2[a] != '\0')
+	for (a = 0; s1[a] != '\0' && b == 0; a++)
 	{
-		if (s1[a] != s2[a])
-		{
-			return (s1[a] - s2[a]);
-		}
-		a++;
+		b = s1[a] - s2[a];
 	}
-	return (0);
+	return (b);
 }
